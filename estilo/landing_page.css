@@ -4,7 +4,7 @@
 
 
 :root {
-    --black: #242424;
+    --black: #272727;
     --purple: #681fad;
     --light-purple: #8226d9;
     --lighter-purple: #9649df;
@@ -81,7 +81,7 @@ a {
 }
 
 a:hover {
-    color: var(--light-purple);
+    color: var(--lighter-purple);
     transition: 0.3s all;
 }
 
@@ -125,6 +125,7 @@ img {
 form {
     display: flex;
     flex-direction: column;
+    width: 70%;
 }
 
 form [type = "submit"] {
