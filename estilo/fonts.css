@@ -177,33 +177,3 @@
     font-style: normal;
     
 }
-
-@font-face {
-    font-family: 'cinzelblack';
-    src: url('../fonts/cinzel/CinzelDecorative-Black.ttf') format('woff2'),
-         url('../fonts/cinzel/CinzelDecorative-Black.ttf') format('woff'),
-         url('../fonts/cinzel/CinzelDecorative-Black.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
-    
-}
-
-@font-face {
-    font-family: 'cinzelbold';
-    src: url('../fonts/cinzel/CinzelDecorative-Bold.ttf') format('woff2'),
-         url('../fonts/cinzel/CinzelDecorative-Bold.ttf') format('woff'),
-         url('../fonts/cinzel/CinzelDecorative-Bold.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
-    
-}
-
-@font-face {
-    font-family: 'cinzelregular';
-    src: url('../fonts/cinzel/CinzelDecorative-Regular.ttf') format('woff2'),
-         url('../fonts/cinzel/CinzelDecorative-Regular.ttf') format('woff'),
-         url('../fonts/cinzel/CinzelDecorative-Regular.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
-    
-}

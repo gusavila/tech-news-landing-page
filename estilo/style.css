@@ -1,363 +1,161 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&display=swap');
-
-
 :root {
-    --cor0: #8227d6;
-    --cor1: #a752f7;
-    --cor2: #682aa3;
-    --cor3: #008BC7;
-    --cor4: #1099d4;
-    --black: #242424;
+  --black: #181818;
+  --white: #f3f3f3;
+  --purple: #681fad;
+  --light-purple: #8226d9;
+  --lighter-purple: #9649df;
+  --cyan: #1f91ad;
+  --light-cyan: #26b5d9;
+  --light-gray: #f0f0f0;
+  --font-family-poppinslight: poppinslight, "Segoe UI", Tahoma, Geneva, Verdana,
+    sans-serif;
+  --font-family-poppinsregular: poppinsregular, "Segoe UI", Tahoma, Geneva,
+    Verdana, sans-serif;
+  --font-family-poppinsmedium: poppinsmedium, "Segoe UI", Tahoma, Geneva,
+    Verdana, sans-serif;
 }
 
 ::-webkit-scrollbar {
-    width: 12px;
+  width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-    background: white;
-    margin-block: 20px;
-    border-radius: 100vw;
+  background: white;
+  margin-block: 20px;
+  border-radius: 100vw;
 }
 
-::-webkit-scrollbar-thumb{
-    background: #008BC7;
-    border: 2px solid white;
-    border-radius: 100vw;
+::-webkit-scrollbar-thumb {
+  background: #008bc7;
+  border: 2px solid white;
+  border-radius: 100vw;
 }
 
-::-webkit-scrollbar-thumb:hover{
-    background: hsl(192 100% 15% / 1);
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(192 100% 15% / 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    background-color: white;
-    color: var(--black);
-    font-family: poppinsregular,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 0;
+  background-color: var(--black);
+  color: var(--white);
+  font-family: var(--font-family-poppinsregular);
 }
 
 .container {
-    max-width: 1250px;
-    margin: 24px auto;
-}
-
-header {
-    background-color: var(--black);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2em;
-    border-radius: 12px 12px 0 0;
-}
-
-#title {
-    font-family: cinzelbold, poppinsbold, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Courier, monospace, 'Arial Narrow', Arial, sans-serif;
-    flex-direction: column;
-    line-height: 13px;
-    padding-left: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 h1 {
-    font-size: 2.6em;
-}
-
-li {
-    display: inline-block;
-    margin: 20px;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-}
-
-a:hover {
-    color:#8227d6;
-    transition: 0.3s all;
-}
-
-#entre-em-contato-btn {
-    background-image: linear-gradient(to left, #1f91ad, #681fad);
-    color: var(--light-gray);
-    font-family: var(--font-family-poppinsmedium);
-    padding: 13px;
-    border-radius: 22px;
-    visibility: hidden;
-}
-
-#entre-em-contato-btn:hover {
-    background-image: linear-gradient(to left, #26b5d9, #8226d9);
-    color: white;
+  font-family: var(--font-family-poppinsbold);
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 1em;
 }
 
 main {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgb(240, 240, 240);
-    color: #682aa3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
-/*  Inicio da estilização da página Sobre_mim */
-#bio {
-    line-height: 10px;
-    font-family: poppinsmedium,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-    background-image: linear-gradient(to left, #1f91ad, #681fad);
-    color: white;
+main p {
+  max-width: 500px;
+  font-family: var(--font-family-poppinslight);
+  word-spacing: 0.1em;
 }
 
-.overlay {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.1);
-    padding-bottom: 30px;
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.6) ;
+h2 {
+  font-size: 2.5rem;
+  line-height: 1em;
+  font-family: var(--font-family-poppinsmedium);
 }
 
-#foto_de_perfil{
-    border-radius: 300px;
-    margin-top: 40px;
-    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+span {
+  color: #8227d6;
 }
 
-#bio h2 {
-    font-family: poppinsbold,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    line-height: 40px;
+strong {
+  font-weight: bold;
 }
 
-#devicons {
-    display: inline-block;
-    background-color: rgba(255, 255, 255, 0.5);
-    margin-top: 5px;
-    padding: 5px;
-    padding-bottom: 10px;
-    border-radius: 40px;
+img {
+  width: 450px;
 }
 
-#devicons img {
-    height: 50px;
-    width: 60px;
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
-#content {
-    text-align: left;
-    padding: 30px 80px;
-    padding-bottom: 0;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-    background-color: rgba(242, 230, 255, 0.5);
+form [type="submit"] {
+  background-image: linear-gradient(to left, #1f91ad, #681fad);
+  color: white;
+  text-transform: uppercase;
+  width: 100%;
+  font-weight: bold;
 }
 
-#content  h2:first-child {
-    margin-top: 10px !important; 
-    border: none;
-    padding-top: 0px;
+form [type="submit"]:hover {
+  cursor: pointer;
+  background-image: linear-gradient(to left, #26b5d9, #8226d9);
 }
 
-#content h2 {
-    text-transform: uppercase;
-    font-family: poppinsbold,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    letter-spacing: 1px;
-    margin-top: 50px;
-    padding-top: 35px;
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
+form [type="submit"]:active {
+  background-image: linear-gradient(
+    to left,
+    hsl(192, 70%, 35%),
+    hsl(271, 70%, 35%)
+  );
 }
 
-#content h3 {
-    margin-left: 20px;
-}
-
-#english {
-    margin-right: 160px;
-}
-
-#french {
-    margin-right: 142px;
-}
-
-#content p {
-    font-family: poppinsregular,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
-    text-align: justify;
-    color: #3f3f3f;
-    text-indent: 20px;
-    margin: 0;
-}
-
-.idioma {
-    display: flex;
-    flex-direction: row;
-    height: 60px;
-}
-
-.idioma p {
-    font-family: poppinsmedium,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
-    font-size: 14px;
-    color: #682aa3;
-}
-
-.box {
-    position: absolute;
-    background-color: #cabbd8;
-    width: 300px;
-    height: 6px;
-    border-radius: 10px;
-    margin-top: 38px;
-    margin-left: 235px;
-}
-
-.box2 {
-    position: absolute;
-    background-color: #682aa3;
-    width: 225px;
-    height: 6px;
-    border-radius: 10px;
-    margin-top: 38px;
-    margin-left: 235px;
-}
-
-.box3 {
-    position: absolute;
-    background-color: #682aa3;
-    width: 50px;
-    height: 6px;
-    border-radius: 10px;
-    margin-top: 38px;
-    margin-left: 235px;
-}
-
-#sobre_mim_text {
-    line-height: 1.75em;
-}
-
-#cursos {
-    margin-bottom: 60px;
-}
-
-#cursos ul {
-    padding: 0;
-    text-indent: 20px;
-    text-align: left;
-}
-
-#cursos li {
-    display: list-item; 
-    list-style-position: inside;
-    padding: 5px;
-    margin: 4px;
-    border-radius: 15px;
-}
-
-#cursos li:hover {
-    color: #008BC7;
-    transition: 0.3s all;
-}
-
-#cursos a {
-    color: #3f3f3f;
-}
-
-#cursos a:hover {
-    color: hsl(192, 59%, 50%);
-}
-
-#cursos a:active {
-    color: hsl(192, 59%, 45%);
-}
-
-#redes_sociais {
-    display: flexbox;
-    flex-direction: row;
-    text-align: right;
-    padding-top: 5px;
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-#redes_sociais img {
-    border-radius: 1em; 
-}
-
-
-/*  fim da estilização da página Sobre_mim */
-
-
-/*  inicio da estilização da página contato */
-#lista_de_contatos {
-    width: 400px;
-    height: 70vh;
-    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
-    margin: 30px auto 20px auto;
-}
-
-/*  fim da estilização da página contato */
-
-.pagina_vazia {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.6em;
-    color: #3f3f3f;
-    margin-top: 0;
-    padding-top: 80px;
-    padding-bottom: 50px;
-
-}
-
-#minhas_fotos {
-    margin: 0 auto;
-    padding: 1% 2%;
-}
-
-#minhas_fotos h2 {
-    font-family: cinzelblack, 'Cinzel Decorative', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.3em;
-    font-weight: bold;
-    background-image: linear-gradient(to right, #8227d6, #a752f7, #1099d4, #008BC7);
-    color: white;
-    margin: 1% 0;
-    padding: 5px 0;
-    text-align: center;
-    box-shadow: 1px 1px 3px rgb(141, 141, 141);
-}
-
-.image_box {
-    width: 95.5%;
-    text-align: left;
-    margin: 3% auto;
-    padding: 10px;
-    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
-    border-radius: 3px;
-}
-
-#cat_img {
-    border-radius: 4px;
-    border-radius: 2px;
-    box-shadow: 1px 1px 4px rgb(141, 141, 141);
-    margin-bottom: 112px;   
+input {
+  margin-top: 20px;
+  padding: 14px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
 }
 
 footer {
-    background-image: linear-gradient(to right, #49157a,#651ea7, #8227d6);
-    color: white;
-    text-align: center;
-    font-size: 0.8em;
-    font-family: poppinslight;
+  background-image: linear-gradient(
+    to right,
+    #49157a,
+    #651ea7,
+    #8227d6,
+    #1099d4,
+    #008bc7
+  );
+  text-align: center;
+  font-size: 0.8rem;
+  font-family: var(--font-family-poppinslight);
 }
 
 footer a {
-    font-family: poppinsmedium;
-    text-decoration: none;
-    text-align: center;
+  font-family: var(--font-family-poppinsmedium);
+  color: white;
+  text-decoration: none;
 }
 
 footer p {
-    padding: 1px;
-    margin: 0;
+  padding: 2px;
 }
 
 footer a:hover {
-    color: var(--cor3);
-    transition: 0.3s all;
+  color: var(--cyan);
+  transition: 0.3s all;
 }

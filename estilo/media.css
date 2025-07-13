@@ -1,72 +1,11 @@
-@media screen and (max-width: 990px){
+@media screen and (max-width: 990px) {
+  main {
+    align-self: center;
+    padding: 0 12px;
+  }
 
-    body{
-        padding: 0;
-        background-color: rgb(240, 240, 240);
-    }
-
-    .container{
-        padding: 16px;
-    }
-
-    header {
-        flex-direction: column;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding: 0;
-        padding-bottom: 10px;
-    }
-
-    header li {
-        margin: 10px;
-    }
-    
-    header ul {
-        margin: 0px auto;
-        margin-top: 10px;
-        padding: 0;
-    }
-
-    #title {
-        text-align: center;
-        margin: 0;
-        padding: 0;
-    }
-
-    #title h1:last-child {
-        margin-bottom: 5px;
-    }
-
-    #entre-em-contato-btn {
-        padding: 10px;
-    }
-
-    main {
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-
-    main p {
-        text-align: justify;
-        text-indent: 1em;
-    }
-
-    form [type = "submit"] {
-        align-self: center;
-        width: 100%;
-    } 
-
-    footer {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-    }
-
-    #teclado_apple {
-        visibility: hidden;
-        position: fixed;
-    }
+  #teclado {
+    display: none;
+    position: fixed;
+  }
 }
